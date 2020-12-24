@@ -11,5 +11,13 @@ export class SuccessAlertComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onFileChanged(event)
+  {
+    const file=event.target.files[0];
+    const uploadData = new FormData();
+    //  uploadData.append('myFile', this.selectedFile, this.selectedFile.name);
+    // this.http.post('my-backend.com/file-upload', uploadData)
+    //   .subscribe(...);
+  }
 
 }
