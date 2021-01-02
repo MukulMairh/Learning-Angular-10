@@ -6,18 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./success-alert.component.scss']
 })
 export class SuccessAlertComponent implements OnInit {
+  usageOfInterpolation="Interpolation is used to send data from ts to front screen.";
+  myEvent="No event exists!!";
+  interpolationThroughMethod ()
+  {
+    return "Interpolation can also be performed using a method that returns string"
+  }
+  delayMyButton=false;
+  constructor() { 
 
-  constructor() { }
+   setTimeout(()=>{
+     this.delayMyButton=true;
+   },3000)   
+
+  }
 
   ngOnInit(): void {
   }
-  onFileChanged(event)
-  {
-    const file=event.target.files[0];
-    const uploadData = new FormData();
-    //  uploadData.append('myFile', this.selectedFile, this.selectedFile.name);
-    // this.http.post('my-backend.com/file-upload', uploadData)
-    //   .subscribe(...);
-  }
+  onEventBindingCreation(){
+    this.myEvent="Event is created successfully.";
 
+  }
+ 
 }

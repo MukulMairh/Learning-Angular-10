@@ -1,6 +1,7 @@
 h3 {
-  color: indianred;
-  background-color: lavenderblush;
-  border: 1px dotted red;
-  padding: 10px;
+  color: red;
+  background-color: wheat;
+}
+h3:focus {
+  background-color: red;
 }

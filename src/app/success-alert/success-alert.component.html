@@ -1,20 +1,13 @@
-<div class="card" style="border: solid 1px;">
-    <div [class]="style.cardHeader">
-        Discussions
-    </div>
-    <div>
-        <button #newDiscussion>Start New Discussion +</button>
-    </div>
-    <div>
-        <div>
-            <img src="img_girl.jpg" alt="Profile Picture" width="500" height="600">
-            <p id="p1">Name</p>
-        </div>
-        <input type="text" style="width: 20%;" placeholder="Start Your Discussion Here.."><br>
-        <input style="display:none" type="file" (change)="onFileChanged($event)" #fileInput>
-        <button (click)="fileInput.click()">Select File </button>
-    </div>
-    <div>
-        <button>Save</button>
-    </div>
+<div class="m-1">
+    <h3>Hi, {{'Interpolation'}} is performed here.</h3>
+    <p>{{usageOfInterpolation}}</p>
+    <h5>{{interpolationThroughMethod()}}</h5>
+
+    <h3>Property Binding</h3>
+    <p>Here the button gets abled after 3 seconds. </p>
+    <button class="btn btn-primary" [disabled]='!delayMyButton'>Delayed Property Binding button</button>
+
+    <h3>Event Binding</h3>
+    <button class="btn btn-primary" (click)="onEventBindingCreation()" [disabled]='!delayMyButton'>Create Event</button>
+    <p>{{myEvent}}</p>
 </div>
