@@ -2,6 +2,10 @@
     <h1>Assignment 2 </h1>
     <h3>Add a input field which updates a property 'user name via 2 way binding'</h3>
     <label>User Name </label>
-    <input class="m-2" type="text" [(ngModel)]="userName">
+    <input class="m-2" type="text" [(ngModel)]="userName" (input)="takeInput($event)">
+    <h3>Output the userName property below via String interpolation</h3>
     <p>userName = {{userName}}</p>
+    <h3>Add a button which may be clicked if the username is not an empty string </h3>
+    <h3>On click of that button input field gets empty</h3>
+    <button class="btn btn-primary" [disabled]="myFlagButton" (click)="emptyMyFeild()">Empty My field</button>
 </div>
