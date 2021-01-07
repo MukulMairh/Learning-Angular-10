@@ -8,11 +8,12 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 
 
 @NgModule({
-  declarations: [AppComponent, ServerComponent, WarningAlertComponent, SuccessAlertComponent, PageNotFoundComponent, DataBindingComponent],
+  declarations: [AppComponent, ServerComponent, WarningAlertComponent, SuccessAlertComponent, PageNotFoundComponent, DataBindingComponent, DirectivesComponent],
   imports: [BrowserModule, FormsModule,
     RouterModule.forRoot([
       {
@@ -30,6 +31,10 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
       {
         path: 'dataBinding',
         component: DataBindingComponent
+      },
+      {
+        path: 'directives',
+        component: DirectivesComponent
       },
       {
         path: '**',
