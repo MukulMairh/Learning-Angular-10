@@ -10,7 +10,10 @@ export class DirectivesComponent implements OnInit {
   public serverStatus = 'No existing Server';
   public serverCreated = false;
 
-  constructor() { }
+
+  constructor() {
+    // this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
+  }
 
   ngOnInit(): void {
   }
@@ -18,6 +21,9 @@ export class DirectivesComponent implements OnInit {
   createServer() {
     this.serverCreated = true;
     this.serverStatus = 'Server is Created';
+  }
+  changingBackground() {
+    return this.serverCreated === true ? 'olivedrab' : 'lightcoral';
   }
 
 }

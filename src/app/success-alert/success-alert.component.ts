@@ -32,4 +32,5 @@ export class SuccessAlertComponent implements OnInit {
     // At the time of 2 way binding we don't need the next line written 
     this.newEvent = event.target.value;
   }
+
 }

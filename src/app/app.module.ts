@@ -9,11 +9,12 @@ import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { KrishnaTaskComponent } from './krishna-task/krishna-task.component';
 
 
 
 @NgModule({
-  declarations: [AppComponent, ServerComponent, WarningAlertComponent, SuccessAlertComponent, PageNotFoundComponent, DataBindingComponent, DirectivesComponent],
+  declarations: [AppComponent, ServerComponent, WarningAlertComponent, SuccessAlertComponent, PageNotFoundComponent, DataBindingComponent, DirectivesComponent, KrishnaTaskComponent],
   imports: [BrowserModule, FormsModule,
     RouterModule.forRoot([
       {
@@ -35,6 +36,10 @@ import { DirectivesComponent } from './directives/directives.component';
       {
         path: 'directives',
         component: DirectivesComponent
+      },
+      {
+        path: 'task',
+        component: KrishnaTaskComponent
       },
       {
         path: '**',
