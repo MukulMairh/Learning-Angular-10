@@ -1,0 +1,20 @@
+<div class="container main-container">
+    <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-12">
+            <label>String 1</label>
+            <input type="text" [(ngModel)]="string1" class="ml-2 my-text-field" placeholder="String 1 goes here ">
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-12">
+            <label>String 2</label>
+            <input type="text" [(ngModel)]="string2" class="ml-2 my-text-field" placeholder="String 2 goes here">
+        </div>
+        <div class="col-sm-12 col-lg-2 col-md-2">
+            <button class="go-button" (click)="checkAnagramGoClick()">Go!</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>{{result}}</p>
+        </div>
+    </div>
+</div>

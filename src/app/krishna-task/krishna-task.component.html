@@ -7,13 +7,28 @@
         <div class="col-sm-12 col-lg-2 col-md-2" style="margin-left: -80px;">
             <h2 class="font-white">SoundAMP</h2>
         </div>
-        <div class="float-right">
-            <div class="col-sm-12 col-lg-6 col-md-6 font-white m-1 float-right" style="display: inline-flex;">
+        <div class="float-right"></div>
+        <div class="col-sm-12 col-lg-6 col-md-6 font-white m-1 float-right" style="display: inline-flex;">
+            <!-- Dropdown -->
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
+                    mdbWavesEffect>
+                    HTML dropdown<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+                    <div class="divider dropdown-divider"></div>
+                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+                </div>
+            </li>
+
+            <div>
                 <!-- Dropdown -->
                 <li class="nav-item dropdown" dropdown>
                     <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
                         mdbWavesEffect>
-                        HTML dropdown<span class="caret"></span></a>
+                        More HTML dropdown<span class="caret"></span></a>
                     <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
                         <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
                         <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
@@ -22,42 +37,25 @@
                         <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
                     </div>
                 </li>
-
-                <div>
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown" dropdown>
-                        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
-                            mdbWavesEffect>
-                            More HTML dropdown<span class="caret"></span></a>
-                        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
-                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
-                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
-                            <div class="divider dropdown-divider"></div>
-                            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
-                        </div>
-                    </li>
-                </div>
-                <div>
-                    <button class="buttonCss">Download Now</button>
-                </div>
             </div>
-            <div class="col-sm-12 col-lg-3 col-md-3 float-right" style="display: inline-flex;">
-                <div>
-                    <i class="fa fa-youtube fontAwesome-icons" aria-hidden="true"></i>
-                </div>
-                <div>
-                    <i class="fa fa-instagram fontAwesome-icons" aria-hidden="true"></i>
-                </div>
-                <div>
-                    <i class="fa fa-linkedin-square fontAwesome-icons" aria-hidden="true"></i>
-                </div>
-                <div>
-                    <i class="fa fa-twitter fontAwesome-icons" aria-hidden="true"></i>
-                </div>
+            <div>
+                <button class="buttonCss">Download Now</button>
             </div>
         </div>
-
+        <div class="col-sm-12 col-lg-3 col-md-3 float-right" style="display: inline-flex;">
+            <div>
+                <i class="fa fa-youtube fontAwesome-icons" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa fa-instagram fontAwesome-icons" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa fa-linkedin-square fontAwesome-icons" aria-hidden="true"></i>
+            </div>
+            <div>
+                <i class="fa fa-twitter fontAwesome-icons" aria-hidden="true"></i>
+            </div>
+        </div>
     </div>
 
     <div style="background-color: rgb(73, 73, 73);">
