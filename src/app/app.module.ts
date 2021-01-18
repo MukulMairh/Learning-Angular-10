@@ -10,7 +10,8 @@ import { PagesModule } from '../app/pages/pages.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, FormsModule, RouterModule.forRoot([]), PagesModule
+  imports: [BrowserModule, FormsModule, RouterModule.forRoot([]),
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent],

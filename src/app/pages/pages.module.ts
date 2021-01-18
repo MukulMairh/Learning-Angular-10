@@ -3,11 +3,14 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { PagesRoutingModule } from './pages-routing.module';
 
+
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot([]), PagesRoutingModule
+    RouterModule.forRoot([]),
+    PagesRoutingModule,
+
   ]
 })
 export class PagesModule { }
