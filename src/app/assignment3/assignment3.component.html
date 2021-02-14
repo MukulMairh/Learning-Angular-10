@@ -1,0 +1,29 @@
+<div class="container" style="border: 1px solid black;">
+    <div class="row">
+        <div class="col-12 m-1">
+            <h3> Add a button which says 'Display Details'</h3>
+        </div>
+        <div class="m-2 pl-2">
+            <button class="btn btn-primary" (click)="fuc()">Display Details</button>
+        </div>
+    </div>
+    <div class="row m-1">
+        <div>
+            <h3>Add a paragraph with any content of your choice .</h3>
+        </div>
+        <div [hidden]="hideFLag">
+            <p>Hi this is a instructor demanded paragraph..Hi this is a instructor demanded paragraph..Hi this is a
+                instructor demanded paragraph..Hi this is a instructor demanded paragraph..Hi this is a instructor
+                demanded paragraph..</p>
+        </div>
+    </div>
+    <div class="row m-1">
+        <div class="m-1">
+            <h3>Log all button click in an array & output that array below the secret paragraph..............</h3>
+        </div>
+        <br>
+        <p *ngFor="let item of arr" [ngClass]="{'myColorClass': item > 4}"
+            [ngStyle]="{backgroundColor: item > 4 ? 'blue':'transparent'}">{{item}}</p>
+    </div>
+    <div></div>
+</div>
